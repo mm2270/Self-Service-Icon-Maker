@@ -1,7 +1,15 @@
-## Self-Service-Icon-Maker
+## Self Service Icon Maker
 A simple app that can extract bundle icons (icns files) and convert them to png's suitable for use with Casper Suite's Self Service application
 
-###New version uploaded: 1.1  
+###Current release: 1.3  
+**Changes:**  
+
+- Self Service Icon Maker can now accept mutliple applications at once! This means you can select as many applications you want in a single directory, drag them all on top of **Self Service Icon Maker** and the app will locate and convert every application icon it can find for each application in one shot.  
+- Because it can now handle many applications at once, an additional "Summary" section is provided at the end of the run in the log window. It will show how many applications were dropped on the app or window, how many it could successfully generate a Self Service icon for, and how many it failed to generate an icon from (if any) The log window still displays the conversion process for each application as it loops over them.  
+- If the chosen directory for saving the icons to somehow goes missing, the app will re-prompt you for a save destination the next time it runs or applications are dropped on it.  
+- Some small bug fixes and better error handling was incorporated in this version, preventing failures in cases where an icns file was located in more than one location within the `/Contents/Resources/` path.  
+
+###Version 1.1 Change log
 **Changes:**  
 
 - Upon first launch, the application will now prompt for a location to save the converted icons, allowing you to contain them all in one location (so you don't need to clutter up your Desktop).
@@ -12,6 +20,8 @@ A simple app that can extract bundle icons (icns files) and convert them to png'
 -   The above would set the icon resolution during conversions to 256 x 256. The default is 128 x 128 if this value is not set in the plist.
 
 **Note:** You should only set the resolution to a size that any .icns file would contain, such as 128, 256, 512, etc. Odd sizes like '200' may result in errors during conversion from .icns to .png format.
+
+###Version 1.0 (Initial Release)  
 
 **Usage:**  
 
