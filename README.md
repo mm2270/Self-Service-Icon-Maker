@@ -1,5 +1,7 @@
 ## Self Service Icon Maker
-A simple app that can extract bundle icons (icns files) and convert them to png's suitable for use with Casper Suite's Self Service application
+*Forked from [mm2270/Self-Service-Icon-Maker](https://github.com/mm2270/Self-Service-Icon-Maker)*
+
+A simple app that can extract bundle icons (ICNS files) and convert them to PNG files suitable for use with Jamf Pro's Self Service application
 
 ### Current release: 1.3.1  
 **Changes:**  
